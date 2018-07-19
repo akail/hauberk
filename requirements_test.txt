@@ -1,5 +1,5 @@
 Sphinx==1.7.6
-bumpversion
+bumpversion==0.5.3
 coverage
 flake8
 pip
