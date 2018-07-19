@@ -1,2 +1,12 @@
+Sphinx
+bumpversion
+coverage
+flake8
+pip
 pytest
 pytest-cov
+pytest-runner
+tox
+twine
+watchdog
+wheel

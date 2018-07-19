@@ -1,3 +1,4 @@
 click
 IMAPClient
 colorlog
+PyYAML
