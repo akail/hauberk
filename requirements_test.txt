@@ -3,7 +3,7 @@ bumpversion==0.5.3
 coverage==4.5.1
 flake8==3.5.0
 pip==10.0.1
-pytest
+pytest==3.6.3
 pytest-cov
 pytest-runner
 tox
