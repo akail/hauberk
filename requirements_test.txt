@@ -1,5 +1,5 @@
 Sphinx
-bumpversion
+bump2version
 coverage
 flake8
 pip
