@@ -1,5 +1,5 @@
 flake8
 flake8-isort
 flake8-docstrings
-neovim
+neovim==0.2.6
 
