@@ -2,10 +2,10 @@
 
 language: python
 python:
-  - 3.7
   - 3.6
   - 3.5
   - 3.4
+#- 3.7
 
 # Command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
 install: pip install -U tox-travis
@@ -27,3 +27,10 @@ deploy:
     tags: true
     repo: akail/hauberk
     python: 3.7
+
+# Temporary for Python 3.7
+matrix:
+  include:
+    - python: 3.7
+      dist: xenial
+      sudo: true
