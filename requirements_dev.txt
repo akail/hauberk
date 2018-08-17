@@ -1,5 +1,5 @@
 flake8
-flake8-isort
+flake8-isort==2.5
 flake8-docstrings
 neovim
 
