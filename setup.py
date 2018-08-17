@@ -31,6 +31,7 @@ setup(
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
     ],
     description="Hauberk allows you to created advanced email automations using python",
     entry_points={
@@ -46,6 +47,7 @@ setup(
     name='hauberk',
     package_dir={"": "src"},
     packages=find_packages('src', include=['hauberk']),
+    python_requires='>=3.4',
     setup_requires=setup_requirements,
     test_suite='tests',
     tests_require=test_requirements,
