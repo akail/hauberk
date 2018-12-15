@@ -2,8 +2,8 @@
 
 """Main module."""
 
-from collections import namedtuple
 import logging
+from collections import namedtuple
 
 from imapclient import IMAPClient
 
