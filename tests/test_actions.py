@@ -3,7 +3,7 @@ from unittest.mock import Mock
 import pytest
 # from imapclient.testable_imapclient import TestableIMAPClient as IMAPClient
 
-from hauberk.actions import Read, Move, Delete, Archive, Respond, Notify
+from hauberk.actions import Read, Move, Delete, Archive, Respond, Notify, Trash
 from hauberk.flags import ImapFlags
 
 
@@ -115,3 +115,22 @@ def test_respond():
 
 def test_respond_dry_run():
     r = Respond()
+
+
+# Trash
+def test_trash_init():
+    t = Trash()
+
+
+def test_trash_dry_run(client):
+    t = Trash()
+    t(client, 1, True)
+    client.add_flags.assert_not_called()
+    client.move.assert_not_called()
+
+
+def test_trash(client):
+    t = Trash()
+    t(client, 1, False)
+    client.add_flags.assert_called_once_with(1, [ImapFlags.SEEN.value])
+    client.move.assert_called_once_with(1, 'Trash')
