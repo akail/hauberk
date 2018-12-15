@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
 """Console script for hauberk."""
-import sys
 import logging
+import sys
 
 import click
 import yaml
