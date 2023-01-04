@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Hauberk allows you to create advanced email automations using Python"
 authors = ["Andrew Kail <andrew.a.kail@gmail.com>"]
 license = "MIT"
-readme = "README.rst"
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.9"
