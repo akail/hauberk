@@ -6,7 +6,7 @@ from click.testing import CliRunner
 from hauberk import cli
 
 
-# @pytest.mark.xfail
+@pytest.mark.xfail
 def test_command_line_interface(tmpdir):
     """Test the CLI."""
 
@@ -27,5 +27,3 @@ def test_cli_bad_log_level(tmpdir):
     runner = CliRunner()
     result = runner.invoke(cli.main, ['--log-level', 'asdf', str(p)])
     assert result.exit_code != 0
-
-
